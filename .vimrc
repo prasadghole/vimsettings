@@ -5,21 +5,24 @@ set ruler
 set showcmd
 set guifont=Source_Code_Pro:h11:cANSI:qDRAFT
 set nowrap
-set shiftwidth=4
-set tabstop=4
+set shiftwidth=2
+set tabstop=2
+set expandtab 	" Always use spaces instead of tab char
+set autoindent  " copy indent from current line when staring a new line
 set showmatch
 set smartcase
 set incsearch
 set ignorecase
 set nu
 set rnu
-set foldmethod=syntax
+"set foldmethod=syntax
 set history=1000
 set undolevels=1000
 set title
 set noswapfile
 set nobackup
 nnoremap ; :
+set spell
 set noerrorbells
 set autochdir
 set wildmenu
@@ -34,6 +37,8 @@ augroup ProjectDrawer
 	autocmd VimEnter * :Vexplore
 augroup END
 
+"Status line
+set statusline=\ %f
 "Gtags keybindings
 nmap <F3> :GtagsCursor<CR>
 nmap <f4> :Gtags -r <C-R><C-W><CR>
