@@ -74,6 +74,9 @@ Plug 'aklt/plantuml-syntax'
 "Web Programming
 Plug 'mattn/emmet-vim'
 
+"C 
+Plug 'vim-scripts/c.vim'
+
 "Plug 'pydave/AsyncCommand'
 "Plug 'mnick/vim-pomodoro'
 call plug#end()
