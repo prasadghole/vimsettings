@@ -4,7 +4,7 @@ filetype plugin on
 set nocompatible
 set ruler
 set showcmd
-set guifont=Source_Code_Pro:h16
+set guifont=Source_Code_Pro:h13
 set nowrap
 set shiftwidth=2
 set tabstop=2
@@ -49,11 +49,15 @@ nmap <C-P> :cp<CR>
 
 
 "Plugin sections
-if empty(glob('~/.vim/autoload/plug.vim'))
-  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+if has('macunix')
+  if empty(glob('~/.vim/autoload/plug.vim'))
+    silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+      \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+  endif
 endif
+
+"for windows install manually 
 
 "Install plugins
 call plug#begin()
