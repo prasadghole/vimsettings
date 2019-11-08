@@ -4,7 +4,7 @@ filetype plugin on
 set nocompatible
 set ruler
 set showcmd
-set guifont=Source_Code_Pro:h13
+set guifont=Source_Code_Pro:h12
 set nowrap
 set shiftwidth=2
 set tabstop=2
@@ -33,10 +33,10 @@ let g:netrw_liststyle = 3
 let g:netrw_browse_split = 4
 let g:netrw_winsize = 25
 let g:netrw_altv = 1
-augroup ProjectDrawer
-	autocmd!
-	autocmd VimEnter * :Vexplore
-augroup END
+"augroup ProjectDrawer
+	"autocmd!
+	"autocmd VimEnter * :Vexplore
+"augroup END
 
 "Status line
 set statusline=\ %f
@@ -72,6 +72,8 @@ Plug 'airblade/vim-gitgutter'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'scrooloose/nerdcommenter'
+Plug 'mhinz/vim-startify'
+Plug 'ryanoasis/vim-devicons'
 "Plant uml
 Plug 'scrooloose/vim-slumlord'
 Plug 'aklt/plantuml-syntax'
