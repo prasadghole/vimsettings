@@ -47,7 +47,7 @@ nmap <f5> :Gtags -f %<CR>
 nmap <C-N> :cn<CR>
 nmap <C-P> :cp<CR>
 
-
+nmap <F8> :TagbarToggle<CR>
 "Plugin sections
 if has('macunix')
   if empty(glob('~/.vim/autoload/plug.vim'))
@@ -74,6 +74,14 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'scrooloose/nerdcommenter'
 Plug 'mhinz/vim-startify'
 Plug 'ryanoasis/vim-devicons'
+Plug 'majutsushi/tagbar' 
+Plug 'vim-scripts/taglist.vim'
+Plug 'multilobyte/gtags-cscope'
+Plug 'zackhsi/fzf-tags'
+Plug 'valloric/youcompleteme'
+
+"Plug 'nathanaelkane/vim-indent-guides'
+
 "Plant uml
 Plug 'scrooloose/vim-slumlord'
 Plug 'aklt/plantuml-syntax'
@@ -88,3 +96,4 @@ Plug 'vim-scripts/c.vim'
 call plug#end()
 "need to check how to integrate with airline 
 "set statusline=%#ErrorMsg#%{PomodoroStatus()}%#StatusLine#
+
